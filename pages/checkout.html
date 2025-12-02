@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - KiddyMart 💳</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito:wght@400;600;700;800&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-left">
+                    <span class="marquee-text">🔒 Secure Checkout - Your information is protected!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simple Header for Checkout -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-wrapper" style="justify-content: center;">
+                <div class="logo">
+                    <a href="../index.html">
+                        <div class="logo-icon"><span class="logo-emoji">🎒</span></div>
+                        <div class="logo-text">
+                            <span class="logo-main">KiddyMart</span>
+                            <span class="logo-tagline">Secure Checkout</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Checkout Progress -->
+    <div class="checkout-progress" style="background: var(--white); padding: 20px 0; border-bottom: 1px solid #eee;">
+        <div class="container">
+            <div style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
+                <div class="progress-step" style="display: flex; align-items: center; gap: 10px;">
+                    <span style="width: 35px; height: 35px; background: var(--primary-green); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">✓</span>
+                    <span style="font-weight: 600; color: var(--primary-green);">Cart</span>
+                </div>
+                <div style="width: 50px; height: 3px; background: var(--primary-green);"></div>
+                <div class="progress-step" style="display: flex; align-items: center; gap: 10px;">
+                    <span style="width: 35px; height: 35px; background: var(--primary-pink); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">2</span>
+                    <span style="font-weight: 600; color: var(--primary-pink);">Checkout</span>
+                </div>
+                <div style="width: 50px; height: 3px; background: #ddd;"></div>
+                <div class="progress-step" style="display: flex; align-items: center; gap: 10px;">
+                    <span style="width: 35px; height: 35px; background: #ddd; color: #999; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">3</span>
+                    <span style="font-weight: 600; color: #999;">Confirmation</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="checkout-layout" data-aos="fade-up">
+                <!-- Checkout Form -->
+                <div class="checkout-form">
+                    <!-- Contact Information -->
+                    <div class="checkout-step">
+                        <div class="step-header">
+                            <span class="step-number">1</span>
+                            <h3 class="step-title">Contact Information</h3>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Email Address *</label>
+                                <input type="email" placeholder="your@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number *</label>
+                                <input type="tel" placeholder="(123) 456-7890" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="updates" checked>
+                                <label for="updates">Send me order updates and special offers via email</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Address -->
+                    <div class="checkout-step">
+                        <div class="step-header">
+                            <span class="step-number">2</span>
+                            <h3 class="step-title">Shipping Address</h3>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>First Name *</label>
+                                <input type="text" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name *</label>
+                                <input type="text" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Street Address *</label>
+                            <input type="text" placeholder="123 Main Street" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Apartment, Suite, etc. (optional)</label>
+                            <input type="text" placeholder="Apt 4B">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>City *</label>
+                                <input type="text" placeholder="New York" required>
+                            </div>
+                            <div class="form-group">
+                                <label>State *</label>
+                                <select required>
+                                    <option value="">Select State</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="NY">New York</option>
+                                    <option value="TX">Texas</option>
+                                    <!-- Add more states -->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>ZIP Code *</label>
+                                <input type="text" placeholder="10001" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Country *</label>
+                                <select required>
+                                    <option value="US" selected>United States</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="AU">Australia</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="save-address">
+                                <label for="save-address">Save this address for future orders</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="billing-same" checked>
+                                <label for="billing-same">Billing address same as shipping</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Method -->
+                    <div class="checkout-step">
+                        <div class="step-header">
+                            <span class="step-number">3</span>
+                            <h3 class="step-title">Shipping Method</h3>
+                        </div>
+                        <div class="shipping-methods" style="display: grid; gap: 15px;">
+                            <label class="shipping-option" style="display: flex; align-items: center; padding: 20px; background: var(--light-gray); border-radius: 12px; cursor: pointer; border: 2px solid transparent; transition: all 0.3s;">
+                                <input type="radio" name="shipping" value="free" checked style="margin-right: 15px; accent-color: var(--primary-pink);">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 700;">🚚 Free Standard Shipping</div>
+                                    <div style="font-size: 0.9rem; color: var(--text-light);">Estimated delivery: 5-7 business days</div>
+                                </div>
+                                <span style="font-weight: 700; color: var(--primary-green);">FREE</span>
+                            </label>
+                            <label class="shipping-option" style="display: flex; align-items: center; padding: 20px; background: var(--light-gray); border-radius: 12px; cursor: pointer; border: 2px solid transparent; transition: all 0.3s;">
+                                <input type="radio" name="shipping" value="express" style="margin-right: 15px; accent-color: var(--primary-pink);">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 700;">⚡ Express Shipping</div>
+                                    <div style="font-size: 0.9rem; color: var(--text-light);">Estimated delivery: 2-3 business days</div>
+                                </div>
+                                <span style="font-weight: 700;">$9.99</span>
+                            </label>
+                            <label class="shipping-option" style="display: flex; align-items: center; padding: 20px; background: var(--light-gray); border-radius: 12px; cursor: pointer; border: 2px solid transparent; transition: all 0.3s;">
+                                <input type="radio" name="shipping" value="next-day" style="margin-right: 15px; accent-color: var(--primary-pink);">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 700;">🚀 Next Day Delivery</div>
+                                    <div style="font-size: 0.9rem; color: var(--text-light);">Order before 2PM for next day delivery</div>
+                                </div>
+                                <span style="font-weight: 700;">$19.99</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Payment Method -->
+                    <div class="checkout-step">
+                        <div class="step-header">
+                            <span class="step-number">4</span>
+                            <h3 class="step-title">Payment Method</h3>
+                        </div>
+                        <div class="payment-methods">
+                            <!-- Credit Card -->
+                            <div class="payment-method active">
+                                <div class="payment-method-header">
+                                    <input type="radio" name="payment" value="card" checked>
+                                    <div class="payment-method-icon">
+                                        <i class="far fa-credit-card"></i>
+                                    </div>
+                                    <div class="payment-method-info">
+                                        <h5>Credit / Debit Card</h5>
+                                        <p>Pay securely with your card</p>
+                                    </div>
+                                    <div class="card-icons">
+                                        <i class="fab fa-cc-visa"></i>
+                                        <i class="fab fa-cc-mastercard"></i>
+                                        <i class="fab fa-cc-amex"></i>
+                                        <i class="fab fa-cc-discover"></i>
+                                    </div>
+                                </div>
+                                <div class="payment-method-body">
+                                    <div class="form-group full-width">
+                                        <label>Card Number *</label>
+                                        <input type="text" placeholder="1234 5678 9012 3456" maxlength="19">
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label>Expiry Date *</label>
+                                            <input type="text" placeholder="MM/YY" maxlength="5">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>CVV *</label>
+                                            <input type="text" placeholder="123" maxlength="4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group full-width">
+                                        <label>Name on Card *</label>
+                                        <input type="text" placeholder="John Doe">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PayPal -->
+                            <div class="payment-method">
+                                <div class="payment-method-header">
+                                    <input type="radio" name="payment" value="paypal">
+                                    <div class="payment-method-icon" style="color: #003087;">
+                                        <i class="fab fa-paypal"></i>
+                                    </div>
+                                    <div class="payment-method-info">
+                                        <h5>PayPal</h5>
+                                        <p>Pay with your PayPal account</p>
+                                    </div>
+                                </div>
+                                <div class="payment-method-body">
+                                    <p style="text-align: center; padding: 20px; color: var(--text-light);">
+                                        You will be redirected to PayPal to complete your payment securely.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Apple Pay -->
+                            <div class="payment-method">
+                                <div class="payment-method-header">
+                                    <input type="radio" name="payment" value="apple">
+                                    <div class="payment-method-icon" style="color: #000;">
+                                        <i class="fab fa-apple-pay"></i>
+                                    </div>
+                                    <div class="payment-method-info">
+                                        <h5>Apple Pay</h5>
+                                        <p>Quick and secure payment</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Google Pay -->
+                            <div class="payment-method">
+                                <div class="payment-method-header">
+                                    <input type="radio" name="payment" value="google">
+                                    <div class="payment-method-icon" style="color: #4285f4;">
+                                        <i class="fab fa-google-pay"></i>
+                                    </div>
+                                    <div class="payment-method-info">
+                                        <h5>Google Pay</h5>
+                                        <p>Fast checkout with Google</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gift Options -->
+                    <div class="checkout-step">
+                        <div class="step-header">
+                            <span class="step-number">🎁</span>
+                            <h3 class="step-title">Gift Options (Optional)</h3>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="is-gift">
+                                <label for="is-gift">This order is a gift</label>
+                            </div>
+                        </div>
+                        <div class="gift-options" style="display: none; margin-top: 20px;">
+                            <div class="form-group">
+                                <label>Gift Message</label>
+                                <textarea placeholder="Add a personal message for the recipient..." style="min-height: 100px;"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="gift-wrap">
+                                    <label for="gift-wrap">Add gift wrapping (+$4.99) 🎀</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="hide-price">
+                                    <label for="hide-price">Hide prices on packing slip</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Order Notes -->
+                    <div class="checkout-step">
+                        <div class="step-header">
+                            <span class="step-number">📝</span>
+                            <h3 class="step-title">Order Notes (Optional)</h3>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Add any special instructions for your order..." style="min-height: 100px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <h3>🧾 Order Summary</h3>
+                    
+                    <div class="order-items">
+                        <!-- Item 1 -->
+                        <div class="order-item">
+                            <div class="order-item-image">
+                                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=100" alt="Unicorn Backpack">
+                                <span class="order-item-qty">1</span>
+                            </div>
+                            <div class="order-item-info">
+                                <h5>Magical Unicorn Backpack</h5>
+                                <span class="variant">Pink / Medium</span>
+                            </div>
+                            <span class="order-item-price">$34.99</span>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="order-item">
+                            <div class="order-item-image">
+                                <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=100" alt="Teddy Bear">
+                                <span class="order-item-qty">2</span>
+                            </div>
+                            <div class="order-item-info">
+                                <h5>Cuddly Teddy Bear XL</h5>
+                                <span class="variant">Brown</span>
+                            </div>
+                            <span class="order-item-price">$49.98</span>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="order-item">
+                            <div class="order-item-image">
+                                <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=100" alt="Colored Pencils">
+                                <span class="order-item-qty">1</span>
+                            </div>
+                            <div class="order-item-info">
+                                <h5>Rainbow Colored Pencils</h5>
+                                <span class="variant">48 Colors</span>
+                            </div>
+                            <span class="order-item-price">$12.99</span>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="order-item">
+                            <div class="order-item-image">
+                                <img src="https://images.unsplash.com/photo-1524578271613-d550eacf6090?w=100" alt="Story Book">
+                                <span class="order-item-qty">1</span>
+                            </div>
+                            <div class="order-item-info">
+                                <h5>Magical Adventures Book</h5>
+                                <span class="variant">Hardcover</span>
+                            </div>
+                            <span class="order-item-price">$18.99</span>
+                        </div>
+                    </div>
+
+                    <!-- Coupon Code -->
+                    <div style="padding: 15px; background: var(--light-gray); border-radius: 12px; margin-bottom: 20px;">
+                        <div style="display: flex; gap: 10px;">
+                            <input type="text" placeholder="Coupon code" style="flex: 1; padding: 12px; border: 2px solid #ddd; border-radius: 8px;">
+                            <button class="btn btn-secondary" style="padding: 12px 20px;">Apply</button>
+                        </div>
+                        <p style="font-size: 0.8rem; color: var(--primary-green); margin-top: 10px;">
+                            ✓ Coupon "KIDDY10" applied - 10% off!
+                        </p>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Subtotal (5 items)</span>
+                        <span>$116.95</span>
+                    </div>
+                    
+                    <div class="summary-row discount">
+                        <span>Discount (10%)</span>
+                        <span>-$11.70</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span style="color: var(--primary-green);">FREE</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Estimated Tax</span>
+                        <span>$8.42</span>
+                    </div>
+
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span>$113.67</span>
+                    </div>
+
+                    <button class="btn btn-primary btn-lg pulse-btn" style="width: 100%;">
+                        <i class="fas fa-lock"></i> Place Order - $113.67
+                    </button>
+
+                    <p style="text-align: center; font-size: 0.85rem; color: var(--text-light); margin-top: 15px;">
+                        By placing this order, you agree to our 
+                        <a href="#" style="color: var(--primary-pink);">Terms of Service</a> and 
+                        <a href="#" style="color: var(--primary-pink);">Privacy Policy</a>
+                    </p>
+
+                    <div class="secure-checkout">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure 256-bit SSL Encryption</span>
+                    </div>
+
+                    <!-- Trust Elements -->
+                    <div style="margin-top: 25px; padding-top: 20px; border-top: 1px dashed #ddd;">
+                        <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 15px;">
+                            <div style="text-align: center;">
+                                <i class="fas fa-truck" style="font-size: 1.5rem; color: var(--primary-green);"></i>
+                                <p style="font-size: 0.75rem; margin-top: 5px;">Free Shipping</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <i class="fas fa-undo" style="font-size: 1.5rem; color: var(--primary-pink);"></i>
+                                <p style="font-size: 0.75rem; margin-top: 5px;">30-Day Returns</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <i class="fas fa-headset" style="font-size: 1.5rem; color: var(--primary-blue);"></i>
+                                <p style="font-size: 0.75rem; margin-top: 5px;">24/7 Support</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Back to Cart -->
+                    <a href="cart.html" style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 20px; color: var(--text-light);">
+                        <i class="fas fa-arrow-left"></i> Return to Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer style="background: var(--text-dark); color: white; padding: 30px 0; text-align: center;">
+        <div class="container">
+            <div style="display: flex; justify-content: center; gap: 30px; margin-bottom: 20px; flex-wrap: wrap;">
+                <a href="#" style="color: white; opacity: 0.8;">Privacy Policy</a>
+                <a href="#" style="color: white; opacity: 0.8;">Terms of Service</a>
+                <a href="#" style="color: white; opacity: 0.8;">Shipping Policy</a>
+                <a href="#" style="color: white; opacity: 0.8;">Return Policy</a>
+                <a href="contact.html" style="color: white; opacity: 0.8;">Contact Us</a>
+            </div>
+            <p style="opacity: 0.7;">© 2024 KiddyMart. Made with 💖 for Kids!</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Gift option toggle
+        document.getElementById('is-gift').addEventListener('change', function() {
+            document.querySelector('.gift-options').style.display = this.checked ? 'block' : 'none';
+        });
+
+        // Payment method toggle
+        document.querySelectorAll('.payment-method').forEach(method => {
+            method.addEventListener('click', function() {
+                document.querySelectorAll('.payment-method').forEach(m => m.classList.remove('active'));
+                this.classList.add('active');
+                this.querySelector('input[type="radio"]').checked = true;
+            });
+        });
+
+        // Shipping option styling
+        document.querySelectorAll('.shipping-option input').forEach(input => {
+            input.addEventListener('change', function() {
+                document.querySelectorAll('.shipping-option').forEach(opt => {
+                    opt.style.borderColor = 'transparent';
+                    opt.style.background = 'var(--light-gray)';
+                });
+                if(this.checked) {
+                    this.closest('.shipping-option').style.borderColor = 'var(--primary-pink)';
+                    this.closest('.shipping-option').style.background = 'rgba(255, 107, 157, 0.1)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

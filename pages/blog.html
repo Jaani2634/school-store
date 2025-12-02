@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - KiddyMart 📝</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito:wght@400;600;700;800&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-left">
+                    <span class="marquee-text">🎉 Free Shipping on Orders Over $50! | 📝 Check out our latest parenting tips!</span>
+                </div>
+                <div class="top-right">
+                    <a href="account.html"><i class="fas fa-user"></i> My Account</a>
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="../index.html">
+                        <div class="logo-icon"><span class="logo-emoji">🎒</span></div>
+                        <div class="logo-text">
+                            <span class="logo-main">KiddyMart</span>
+                            <span class="logo-tagline">Fun Shopping!</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <div class="search-wrapper">
+                        <input type="text" placeholder="Search articles...🔍">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <a href="wishlist.html" class="action-item">
+                        <div class="action-icon"><i class="fas fa-heart"></i><span class="badge">3</span></div>
+                    </a>
+                    <a href="cart.html" class="action-item cart-action">
+                        <div class="action-icon"><i class="fas fa-shopping-cart"></i><span class="badge">5</span></div>
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+                    <li class="nav-item"><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li class="nav-item active"><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li class="nav-item"><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">📝 Our Blog</h1>
+                <nav class="breadcrumb">
+                    <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+                    <span>/</span>
+                    <span class="current">Blog</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-layout">
+                <!-- Blog Main Content -->
+                <div class="blog-main">
+                    <!-- Featured Post -->
+                    <article class="blog-card featured" style="grid-column: span 2; margin-bottom: 30px;" data-aos="fade-up">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(255, 107, 157, 0.1);">
+                            <div class="blog-image" style="height: 100%; min-height: 350px;">
+                                <a href="#">
+                                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600" alt="Back to School Guide" style="width: 100%; height: 100%; object-fit: cover;">
+                                </a>
+                                <span class="blog-category" style="background: var(--primary-red);">Featured</span>
+                            </div>
+                            <div style="padding: 40px; display: flex; flex-direction: column; justify-content: center;">
+                                <div class="blog-meta" style="margin-bottom: 15px;">
+                                    <span><i class="far fa-calendar"></i> January 5, 2024</span>
+                                    <span><i class="far fa-user"></i> Sarah Johnson</span>
+                                </div>
+                                <h2 style="font-family: 'Fredoka One', cursive; font-size: 1.8rem; margin-bottom: 15px; line-height: 1.3;">
+                                    <a href="#">The Ultimate Back-to-School Shopping Guide for 2024 🎒</a>
+                                </h2>
+                                <p style="color: var(--text-light); line-height: 1.7; margin-bottom: 20px;">
+                                    Get your kids ready for the new school year with our comprehensive guide! From must-have supplies to organization tips, we've got everything covered to make this your best back-to-school season yet.
+                                </p>
+                                <a href="#" class="btn btn-primary" style="align-self: flex-start;">
+                                    Read More <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog Grid -->
+                    <div class="blog-grid" data-aos="fade-up">
+                        <!-- Blog Post 1 -->
+                        <article class="blog-card">
+                            <div class="blog-image">
+                                <a href="#">
+                                    <img src="https://images.unsplash.com/photo-1503919889470-a09f58755c79?w=400" alt="Blog Post">
+                                </a>
+                                <span class="blog-category">Parenting Tips</span>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="far fa-calendar"></i> Jan 3, 2024</span>
+                                    <span><i class="far fa-comments"></i> 24</span>
+                                </div>
+                                <h3 class="blog-title">
+                                    <a href="#">10 Ways to Make Homework Time Fun for Kids 📚</a>
+                                </h3>
+                                <p class="blog-excerpt">
+                                    Transform dreaded homework sessions into exciting learning adventures with these creative tips and tricks...
+                                </p>
+                                <a href="#" class="blog-link">
+                                    Read More <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 2 -->
+                        <article class="blog-card">
+                            <div class="blog-image">
+                                <a href="#">
+                                    <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=400" alt="Blog Post">
+                                </a>
+                                <span class="blog-category">Gift Ideas</span>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="far fa-calendar"></i> Dec 28, 2023</span>
+                                    <span><i class="far fa-comments"></i> 18</span>
+                                </div>
+                                <h3 class="blog-title">
+                                    <a href="#">Best Educational Toys for Every Age Group 🧸</a>
+                                </h3>
+                                <p class="blog-excerpt">
+                                    Discover toys that combine learning with fun! Our experts have curated the perfect list for toddlers to tweens...
+                                </p>
+                                <a href="#" class="blog-link">
+                                    Read More <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 3 -->
+                        <article class="blog-card">
+                            <div class="blog-image">
+                                <a href="#">
+                                    <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400" alt="Blog Post">
+                                </a>
+                                <span class="blog-category">DIY & Crafts</span>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="far fa-calendar"></i> Dec 22, 2023</span>
+                                    <span><i class="far fa-comments"></i> 32</span>
+                                </div>
+                                <h3 class="blog-title">
+                                    <a href="#">5 Fun Art Projects to Do with Your Kids This Weekend 🎨</a>
+                                </h3>
+                                <p class="blog-excerpt">
+                                    Get creative with these easy and mess-free art projects perfect for quality family time...
+                                </p>
+                                <a href="#" class="blog-link">
+                                    Read More <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 4 -->
+                        <article class="blog-card">
+                            <div class="blog-image">
+                                <a href="#">
+                                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400" alt="Blog Post">
+                                </a>
+                                <span class="blog-category">Buying Guide</span>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="far fa-calendar"></i> Dec 18, 2023</span>
+                                    <span><i class="far fa-comments"></i> 15</span>
+                                </div>
+                                <h3 class="blog-title">
+                                    <a href="#">How to Choose the Perfect Shoes for Growing Feet 👟</a>
+                                </h3>
+                                <p class="blog-excerpt">
+                                    A complete guide to finding comfortable, supportive, and stylish shoes for your little ones...
+                                </p>
+                                <a href="#" class="blog-link">
+                                    Read More <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 5 -->
+                        <article class="blog-card">
+                            <div class="blog-image">
+                                <a href="#">
+                                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400" alt="Blog Post">
+                                </a>
+                                <span class="blog-category">Health & Safety</span>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="far fa-calendar"></i> Dec 15, 2023</span>
+                                    <span><i class="far fa-comments"></i> 28</span>
+                                </div>
+                                <h3 class="blog-title">
+                                    <a href="#">Packing the Perfect Healthy Lunch Box for School 🥗</a>
+                                </h3>
+                                <p class="blog-excerpt">
+                                    Nutritious and delicious lunch ideas that your kids will actually eat! Plus tips for keeping food fresh...
+                                </p>
+                                <a href="#" class="blog-link">
+                                    Read More <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 6 -->
+                        <article class="blog-card">
+                            <div class="blog-image">
+                                <a href="#">
+                                    <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?w=400" alt="Blog Post">
+                                </a>
+                                <span class="blog-category">Organization</span>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="far fa-calendar"></i> Dec 10, 2023</span>
+                                    <span><i class="far fa-comments"></i> 21</span>
+                                </div>
+                                <h3 class="blog-title">
+                                    <a href="#">Organizing Your Child's Study Space for Success 📖</a>
+                                </h3>
+                                <p class="blog-excerpt">
+                                    Create the perfect homework haven with these organization tips and must-have supplies...
+                                </p>
+                                <a href="#" class="blog-link">
+                                    Read More <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav class="pagination" style="margin-top: 50px;" data-aos="fade-up">
+                        <a href="#" class="page-link prev"><i class="fas fa-chevron-left"></i> Prev</a>
+                        <a href="#" class="page-link active">1</a>
+                        <a href="#" class="page-link">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <a href="#" class="page-link next">Next <i class="fas fa-chevron-right"></i></a>
+                    </nav>
+                </div>
+
+                <!-- Blog Sidebar -->
+                <aside class="blog-sidebar" data-aos="fade-left">
+                    <!-- Search Widget -->
+                    <div class="blog-widget">
+                        <h4 class="blog-widget-title">🔍 Search</h4>
+                        <div class="blog-search">
+                            <input type="text" placeholder="Search articles...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Categories Widget -->
+                    <div class="blog-widget">
+                        <h4 class="blog-widget-title">📂 Categories</h4>
+                        <ul class="blog-categories">
+                            <li><a href="#">Parenting Tips <span>24</span></a></li>
+                            <li><a href="#">Back to School <span>18</span></a></li>
+                            <li><a href="#">Gift Ideas <span>15</span></a></li>
+                            <li><a href="#">DIY & Crafts <span>22</span></a></li>
+                            <li><a href="#">Buying Guides <span>12</span></a></li>
+                            <li><a href="#">Health & Safety <span>9</span></a></li>
+                            <li><a href="#">Organization <span>11</span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Recent Posts Widget -->
+                    <div class="blog-widget">
+                        <h4 class="blog-widget-title">📰 Recent Posts</h4>
+                        <ul class="recent-posts">
+                            <li>
+                                <div class="recent-post-image">
+                                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=100" alt="Post">
+                                </div>
+                                <div class="recent-post-info">
+                                    <h5><a href="#">The Ultimate Back-to-School Shopping Guide</a></h5>
+                                    <span class="post-date">Jan 5, 2024</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recent-post-image">
+                                    <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=100" alt="Post">
+                                </div>
+                                <div class="recent-post-info">
+                                    <h5><a href="#">Best Educational Toys for Every Age Group</a></h5>
+                                    <span class="post-date">Dec 28, 2023</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recent-post-image">
+                                    <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=100" alt="Post">
+                                </div>
+                                <div class="recent-post-info">
+                                    <h5><a href="#">5 Fun Art Projects for the Weekend</a></h5>
+                                    <span class="post-date">Dec 22, 2023</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tags Widget -->
+                    <div class="blog-widget">
+                        <h4 class="blog-widget-title">🏷️ Popular Tags</h4>
+                        <div class="blog-tags">
+                            <a href="#">School</a>
+                            <a href="#">Parenting</a>
+                            <a href="#">Toys</a>
+                            <a href="#">Education</a>
+                            <a href="#">Crafts</a>
+                            <a href="#">Tips</a>
+                            <a href="#">DIY</a>
+                            <a href="#">Shopping</a>
+                            <a href="#">Kids</a>
+                            <a href="#">Gifts</a>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Widget -->
+                    <div class="blog-widget" style="background: var(--gradient-pink); color: white;">
+                        <h4 style="color: white; border-bottom-color: rgba(255,255,255,0.3);">📧 Newsletter</h4>
+                        <p style="margin-bottom: 15px; opacity: 0.9;">Get the latest articles and deals directly in your inbox!</p>
+                        <form>
+                            <input type="email" placeholder="Your email" style="width: 100%; padding: 12px; border-radius: 8px; border: none; margin-bottom: 10px;">
+                            <button class="btn btn-white" style="width: 100%;">Subscribe</button>
+                        </form>
+                    </div>
+
+                    <!-- Social Widget -->
+                    <div class="blog-widget">
+                        <h4 class="blog-widget-title">📱 Follow Us</h4>
+                        <div style="display: flex; gap: 10px;">
+                            <a href="#" style="width: 45px; height: 45px; background: #3b5998; color: white; border-radius: 10px; display: flex; align-items: center; justify-content: center;"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" style="width: 45px; height: 45px; background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: white; border-radius: 10px; display: flex; align-items: center; justify-content: center;"><i class="fab fa-instagram"></i></a>
+                            <a href="#" style="width: 45px; height: 45px; background: #1da1f2; color: white; border-radius: 10px; display: flex; align-items: center; justify-content: center;"><i class="fab fa-twitter"></i></a>
+                            <a href="#" style="width: 45px; height: 45px; background: #ff0000; color: white; border-radius: 10px; display: flex; align-items: center; justify-content: center;"><i class="fab fa-youtube"></i></a>
+                            <a href="#" style="width: 45px; height: 45px; background: #bd081c; color: white; border-radius: 10px; display: flex; align-items: center; justify-content: center;"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="newsletter-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-icon">📬</div>
+                <h2 class="newsletter-title">Never Miss a Post!</h2>
+                <p class="newsletter-text">Subscribe to get the latest parenting tips, DIY ideas, and exclusive deals.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i>
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-about">
+                        <div class="footer-logo">
+                            <span class="logo-emoji">🎒</span>
+                            <span class="logo-text">KiddyMart</span>
+                        </div>
+                        <p>Your one-stop shop for all kids' essentials!</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4 class="footer-title">Help</h4>
+                        <ul>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4 class="footer-title">Contact</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                                            <a href="mailto:hello@kiddymart.com">hello@kiddymart.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="copyright">© 2024 KiddyMart. Made with 💖 for Kids!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

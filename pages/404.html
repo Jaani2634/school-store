@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - KiddyMart 😢</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito:wght@400;600;700;800&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #FFF0F5 0%, #FFF9F0 100%);
+            padding: 40px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .error-page::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(255, 107, 157, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 217, 61, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(107, 203, 119, 0.1) 0%, transparent 50%);
+            animation: floatBg 20s ease-in-out infinite;
+        }
+        
+        @keyframes floatBg {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+        
+        .error-container {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+        }
+        
+        .error-animation {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .error-emoji {
+            font-size: 8rem;
+            display: block;
+            animation: bounce 2s ease-in-out infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+        
+        .floating-elements span {
+            position: absolute;
+            font-size: 2rem;
+            animation: float 4s ease-in-out infinite;
+        }
+        
+        .floating-elements span:nth-child(1) { top: 0; left: 10%; animation-delay: 0s; }
+        .floating-elements span:nth-child(2) { top: 20%; right: 10%; animation-delay: 0.5s; }
+        .floating-elements span:nth-child(3) { bottom: 20%; left: 5%; animation-delay: 1s; }
+        .floating-elements span:nth-child(4) { bottom: 10%; right: 15%; animation-delay: 1.5s; }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.5; }
+            50% { transform: translateY(-15px) rotate(10deg); opacity: 1; }
+        }
+        
+        .error-code {
+            font-family: 'Fredoka One', cursive;
+            font-size: 10rem;
+            background: linear-gradient(135deg, #FF6B9D 0%, #FFD93D 50%, #6BCB77 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 20px;
+            text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+        }
+        
+        .error-title {
+            font-family: 'Fredoka One', cursive;
+            font-size: 2.5rem;
+            color: #2D3436;
+            margin-bottom: 15px;
+        }
+        
+        .error-message {
+            font-size: 1.1rem;
+            color: #636E72;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+        
+        .error-search {
+            display: flex;
+            max-width: 400px;
+            margin: 0 auto 30px;
+            border: 3px solid #FF6B9D;
+            border-radius: 50px;
+            overflow: hidden;
+            background: white;
+        }
+        
+        .error-search input {
+            flex: 1;
+            padding: 15px 25px;
+            border: none;
+            font-size: 1rem;
+            outline: none;
+        }
+        
+        .error-search button {
+            background: linear-gradient(135deg, #FF6B9D 0%, #FF8E53 100%);
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .error-search button:hover {
+            transform: scale(1.05);
+        }
+        
+        .error-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        
+        .popular-links {
+            margin-top: 40px;
+        }
+        
+        .popular-links h4 {
+            font-family: 'Fredoka One', cursive;
+            margin-bottom: 20px;
+            color: #2D3436;
+        }
+        
+        .popular-links ul {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .popular-links ul li a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: white;
+            border-radius: 25px;
+            color: #636E72;
+            font-weight: 600;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .popular-links ul li a:hover {
+            background: linear-gradient(135deg, #FF6B9D 0%, #FF8E53 100%);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 107, 157, 0.3);
+        }
+        
+        .popular-links ul li a i {
+            font-size: 1.2rem;
+        }
+        
+        .back-home-mascot {
+            margin-top: 40px;
+            padding: 30px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(255, 107, 157, 0.15);
+        }
+        
+        .back-home-mascot p {
+            font-size: 1.1rem;
+            color: #636E72;
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 6rem;
+            }
+            .error-title {
+                font-size: 1.8rem;
+            }
+            .error-emoji {
+                font-size: 5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <div class="floating-elements">
+            <span>⭐</span>
+            <span>🎈</span>
+            <span>🌈</span>
+            <span>💖</span>
+        </div>
+        
+        <div class="error-container">
+            <div class="error-animation">
+                <span class="error-emoji">😢</span>
+            </div>
+            
+            <div class="error-code">404</div>
+            
+            <h1 class="error-title">Oops! Page Not Found</h1>
+            
+            <p class="error-message">
+                Oh no! It looks like this page went on an adventure and got lost! 
+                Don't worry, let's help you find your way back to the fun stuff! 🎒
+            </p>
+            
+            <div class="error-search">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="error-buttons">
+                <a href="../index.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-home"></i> Go Home
+                </a>
+                <a href="shop.html" class="btn btn-secondary btn-lg">
+                    <i class="fas fa-store"></i> Browse Shop
+                </a>
+            </div>
+            
+            <div class="popular-links">
+                <h4>Or check out these popular pages:</h4>
+                <ul>
+                    <li><a href="shop.html?cat=bags"><i class="fas fa-backpack">🎒</i> School Bags</a></li>
+                    <li><a href="shop.html?cat=toys"><i class="fas fa-gamepad">🧸</i> Toys</a></li>
+                    <li><a href="shop.html?cat=stationery"><i class="fas fa-pencil">✏️</i> Stationery</a></li>
+                    <li><a href="shop.html?sale=true"><i class="fas fa-tags">🏷️</i> Sale Items</a></li>
+                </ul>
+            </div>
+            
+            <div class="back-home-mascot">
+                <p>🦄 "Hey there! Even unicorns take wrong turns sometimes. Let me guide you back!"</p>
+                <a href="contact.html" style="color: #FF6B9D; font-weight: 600;">
+                    <i class="fas fa-envelope"></i> Need help? Contact our friendly team!
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

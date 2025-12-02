@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed! - KiddyMart 🎉</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito:wght@400;600;700;800&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Simple Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-wrapper" style="justify-content: center;">
+                <div class="logo">
+                    <a href="../index.html">
+                        <div class="logo-icon"><span class="logo-emoji">🎒</span></div>
+                        <div class="logo-text">
+                            <span class="logo-main">KiddyMart</span>
+                            <span class="logo-tagline">Thank You!</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Confirmation Section -->
+    <section style="padding: 80px 0; min-height: 80vh; background: linear-gradient(135deg, #FFF0F5 0%, #FFF9F0 100%);">
+        <div class="container">
+            <!-- Success Animation -->
+            <div style="text-align: center; margin-bottom: 50px;" class="animate__animated animate__bounceIn">
+                <div style="width: 150px; height: 150px; background: var(--gradient-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 30px; box-shadow: 0 20px 60px rgba(107, 203, 119, 0.4);">
+                    <i class="fas fa-check" style="font-size: 4rem; color: white;"></i>
+                </div>
+                <h1 style="font-family: 'Fredoka One', cursive; font-size: 2.5rem; color: var(--primary-green); margin-bottom: 15px;">
+                    Order Confirmed! 🎉
+                </h1>
+                <p style="font-size: 1.2rem; color: var(--text-light); max-width: 500px; margin: 0 auto;">
+                    Thank you for shopping with KiddyMart! Your order has been successfully placed.
+                </p>
+            </div>
+
+            <!-- Confetti Animation -->
+            <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999;" id="confetti"></div>
+
+            <!-- Order Details Card -->
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="background: white; border-radius: 20px; padding: 40px; box-shadow: 0 10px 40px rgba(255, 107, 157, 0.1); margin-bottom: 30px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding-bottom: 25px; border-bottom: 2px dashed var(--primary-pink); margin-bottom: 25px;">
+                        <div>
+                            <p style="color: var(--text-light); margin-bottom: 5px;">Order Number</p>
+                            <h2 style="font-family: 'Fredoka One', cursive; color: var(--primary-pink);">#KM-78543</h2>
+                        </div>
+                        <div style="text-align: right;">
+                            <p style="color: var(--text-light); margin-bottom: 5px;">Order Date</p>
+                            <p style="font-weight: 700;">January 8, 2024</p>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Info -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px;">
+                        <div>
+                            <h4 style="font-family: 'Fredoka One', cursive; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 1.5rem;">📦</span> Shipping To
+                            </h4>
+                            <p style="color: var(--text-light); line-height: 1.7;">
+                                <strong style="color: var(--text-dark);">Sarah Johnson</strong><br>
+                                123 Rainbow Street, Apt 4B<br>
+                                New York, NY 10001<br>
+                                United States<br>
+                                📞 (555) 123-4567
+                            </p>
+                        </div>
+                        <div>
+                            <h4 style="font-family: 'Fredoka One', cursive; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 1.5rem;">🚚</span> Shipping Method
+                            </h4>
+                            <p style="color: var(--text-light); line-height: 1.7;">
+                                <strong style="color: var(--text-dark);">Free Standard Shipping</strong><br>
+                                Estimated Delivery:<br>
+                                <span style="color: var(--primary-green); font-weight: 700;">January 13-15, 2024</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Order Items -->
+                    <h4 style="font-family: 'Fredoka One', cursive; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                        <span style="font-size: 1.5rem;">🛍️</span> Order Items
+                    </h4>
+                    
+                    <div style="background: var(--light-gray); border-radius: 15px; padding: 20px; margin-bottom: 25px;">
+                        <!-- Item 1 -->
+                        <div style="display: flex; gap: 15px; padding: 15px 0; border-bottom: 1px solid #ddd;">
+                            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=80" alt="Product" style="width: 70px; height: 70px; object-fit: cover; border-radius: 10px;">
+                            <div style="flex: 1;">
+                                <h5 style="font-weight: 700; margin-bottom: 5px;">Magical Unicorn Backpack</h5>
+                                <p style="color: var(--text-light); font-size: 0.9rem;">Pink / Medium × 1</p>
+                            </div>
+                            <span style="font-weight: 700;">$34.99</span>
+                        </div>
+                        
+                        <!-- Item 2 -->
+                        <div style="display: flex; gap: 15px; padding: 15px 0; border-bottom: 1px solid #ddd;">
+                            <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=80" alt="Product" style="width: 70px; height: 70px; object-fit: cover; border-radius: 10px;">
+                            <div style="flex: 1;">
+                                <h5 style="font-weight: 700; margin-bottom: 5px;">Cuddly Teddy Bear XL</h5>
+                                <p style="color: var(--text-light); font-size: 0.9rem;">Brown × 2</p>
+                            </div>
+                            <span style="font-weight: 700;">$49.98</span>
+                        </div>
+                        
+                        <!-- Item 3 -->
+                        <div style="display: flex; gap: 15px; padding: 15px 0;">
+                            <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=80" alt="Product" style="width: 70px; height: 70px; object-fit: cover; border-radius: 10px;">
+                            <div style="flex: 1;">
+                                <h5 style="font-weight: 700; margin-bottom: 5px;">Rainbow Colored Pencils Set</h5>
+                                <p style="color: var(--text-light); font-size: 0.9rem;">48 Colors × 1</p>
+                            </div>
+                            <span style="font-weight: 700;">$12.99</span>
+                        </div>
+                    </div>
+
+                    <!-- Order Summary -->
+                    <div style="background: var(--bg-secondary); border-radius: 15px; padding: 20px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span style="color: var(--text-light);">Subtotal</span>
+                            <span>$97.96</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span style="color: var(--text-light);">Discount (10%)</span>
+                            <span style="color: var(--primary-green);">-$9.80</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span style="color: var(--text-light);">Shipping</span>
+                            <span style="color: var(--primary-green);">FREE</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span style="color: var(--text-light);">Tax</span>
+                            <span>$7.05</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding-top: 15px; border-top: 2px dashed var(--primary-pink); margin-top: 10px;">
+                            <span style="font-weight: 700; font-size: 1.1rem;">Total Paid</span>
+                            <span style="font-family: 'Fredoka One', cursive; font-size: 1.5rem; color: var(--primary-pink);">$95.21</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- What's Next -->
+                <div style="background: white; border-radius: 20px; padding: 40px; box-shadow: 0 10px 40px rgba(255, 107, 157, 0.1); margin-bottom: 30px;">
+                    <h3 style="font-family: 'Fredoka One', cursive; text-align: center; margin-bottom: 30px;">
+                        📬 What Happens Next?
+                    </h3>
+                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center;">
+                        <div>
+                            <div style="width: 60px; height: 60px; background: var(--gradient-pink); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; color: white; font-size: 1.5rem;">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h5 style="font-weight: 700; margin-bottom: 5px;">Email Sent</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-light);">Confirmation email on its way!</p>
+                        </div>
+                        <div>
+                            <div style="width: 60px; height: 60px; background: var(--gradient-yellow); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; color: white; font-size: 1.5rem;">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <h5 style="font-weight: 700; margin-bottom: 5px;">Packing</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-light);">We're preparing your order</p>
+                        </div>
+                        <div>
+                            <div style="width: 60px; height: 60px; background: var(--gradient-purple); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; color: white; font-size: 1.5rem;">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h5 style="font-weight: 700; margin-bottom: 5px;">Shipping</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-light);">On the way to you!</p>
+                        </div>
+                        <div>
+                            <div style="width: 60px; height: 60px; background: var(--gradient-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; color: white; font-size: 1.5rem;">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h5 style="font-weight: 700; margin-bottom: 5px;">Delivered</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-light);">Enjoy your goodies!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-bottom: 30px;">
+                    <a href="account.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-clipboard-list"></i> Track Order
+                    </a>
+                    <a href="shop.html" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-store"></i> Continue Shopping
+                    </a>
+                    <button class="btn btn-secondary btn-lg" onclick="window.print()">
+                        <i class="fas fa-print"></i> Print Receipt
+                    </button>
+                </div>
+
+                <!-- Referral Box -->
+                <div style="background: var(--gradient-pink); border-radius: 20px; padding: 40px; text-align: center; color: white;">
+                    <h3 style="font-family: 'Fredoka One', cursive; margin-bottom: 15px;">
+                        🎁 Share the Love & Get $10!
+                    </h3>
+                    <p style="margin-bottom: 25px; opacity: 0.95;">
+                        Invite a friend to KiddyMart and you'll both get $10 off your next order!
+                    </p>
+                    <div style="display: flex; gap: 10px; justify-content: center; max-width: 400px; margin: 0 auto;">
+                        <input type="text" value="SARAH10FRIEND" readonly style="flex: 1; padding: 15px; border: none; border-radius: 10px; font-weight: 700; text-align: center;">
+                        <button class="btn btn-white" onclick="navigator.clipboard.writeText('SARAH10FRIEND'); alert('Code copied!');">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <div style="display: flex; gap: 15px; justify-content: center; margin-top: 25px;">
+                        <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" style="color: white; font-size: 1.5rem;"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer style="background: var(--text-dark); color: white; padding: 30px 0; text-align: center;">
+        <div class="container">
+            <p style="margin-bottom: 15px;">Need help with your order?</p>
+            <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-bottom: 20px;">
+                <a href="contact.html" style="color: white; opacity: 0.8;"><i class="fas fa-envelope"></i> Email Us</a>
+                <a href="tel:+18005433379" style="color: white; opacity: 0.8;"><i class="fas fa-phone"></i> 1-800-KIDDY</a>
+                <a href="faq.html" style="color: white; opacity: 0.8;"><i class="fas fa-question-circle"></i> FAQs</a>
+            </div>
+            <p style="opacity: 0.6; font-size: 0.9rem;">© 2024 KiddyMart. Made with 💖 for Kids!</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple confetti effect
+        function createConfetti() {
+            const container = document.getElementById('confetti');
+            const colors = ['#FF6B9D', '#FFD93D', '#6BCB77', '#4D96FF', '#A66CFF', '#FF6B6B'];
+            
+            for (let i = 0; i < 100; i++) {
+                const confetti = document.createElement('div');
+                confetti.style.cssText = `
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    background: ${colors[Math.floor(Math.random() * colors.length)]};
+                    left: ${Math.random() * 100}%;
+                    top: -10px;
+                    opacity: ${Math.random()};
+                    transform: rotate(${Math.random() * 360}deg);
+                    animation: fall ${2 + Math.random() * 3}s linear forwards;
+                `;
+                container.appendChild(confetti);
+            }
+        }
+        
+        // Add keyframes for falling animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fall {
+                to {
+                    top: 100vh;
+                    opacity: 0;
+                    transform: rotate(720deg);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+        
+        // Trigger confetti on page load
+        window.addEventListener('load', () => {
+            createConfetti();
+            setTimeout(createConfetti, 1000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - KiddyMart 👤</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito:wght@400;600;700;800&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-left">
+                    <span class="marquee-text">🎉 Welcome back! Check out our new arrivals!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="../index.html">
+                        <div class="logo-icon"><span class="logo-emoji">🎒</span></div>
+                        <div class="logo-text">
+                            <span class="logo-main">KiddyMart</span>
+                            <span class="logo-tagline">Fun Shopping!</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="header-actions">
+                    <a href="wishlist.html" class="action-item">
+                        <div class="action-icon"><i class="fas fa-heart"></i><span class="badge">3</span></div>
+                    </a>
+                    <a href="cart.html" class="action-item cart-action">
+                        <div class="action-icon"><i class="fas fa-shopping-cart"></i><span class="badge">5</span></div>
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">👤 My Account</h1>
+                <nav class="breadcrumb">
+                    <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+                    <span>/</span>
+                    <span class="current">Account</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Account Section -->
+    <section class="account-section">
+        <div class="container">
+            <div class="account-layout" data-aos="fade-up">
+                <!-- Account Sidebar -->
+                <aside class="account-sidebar">
+                    <div class="account-user">
+                        <div class="account-avatar">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200" alt="Sarah Johnson">
+                        </div>
+                        <h4>Sarah Johnson</h4>
+                        <p>sarah.johnson@email.com</p>
+                    </div>
+                    <ul class="account-menu">
+                        <li>
+                            <a href="#dashboard" class="active">
+                                <i class="fas fa-tachometer-alt"></i> Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#orders">
+                                <i class="fas fa-shopping-bag"></i> Orders
+                                <span class="menu-badge">3</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="wishlist.html">
+                                <i class="fas fa-heart"></i> Wishlist
+                                <span class="menu-badge">6</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#addresses">
+                                <i class="fas fa-map-marker-alt"></i> Addresses
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#payment">
+                                <i class="fas fa-credit-card"></i> Payment Methods
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#settings">
+                                <i class="fas fa-cog"></i> Account Settings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" style="color: var(--primary-red);">
+                                <i class="fas fa-sign-out-alt"></i> Logout
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!-- Account Content -->
+                <div class="account-content">
+                    <!-- Dashboard Header -->
+                    <div class="account-header">
+                        <h2>Welcome back, Sarah! 👋</h2>
+                        <p style="color: var(--text-light);">Here's what's happening with your account today.</p>
+                    </div>
+
+                    <!-- Dashboard Cards -->
+                    <div class="dashboard-cards">
+                        <div class="dashboard-card">
+                            <div class="dashboard-card-icon">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <h3>12</h3>
+                            <p>Total Orders</p>
+                        </div>
+                        <div class="dashboard-card">
+                            <div class="dashboard-card-icon" style="background: var(--gradient-green);">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h3>3</h3>
+                            <p>In Transit</p>
+                        </div>
+                        <div class="dashboard-card">
+                            <div class="dashboard-card-icon" style="background: var(--gradient-purple);">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>6</h3>
+                            <p>Wishlist Items</p>
+                        </div>
+                        <div class="dashboard-card">
+                            <div class="dashboard-card-icon" style="background: var(--gradient-yellow);">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>450</h3>
+                            <p>Reward Points</p>
+                        </div>
+                    </div>
+
+                    <!-- Recent Orders -->
+                    <div style="margin-top: 40px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                            <h3 style="font-family: 'Fredoka One', cursive; font-size: 1.3rem;">Recent Orders</h3>
+                            <a href="#orders" style="color: var(--primary-pink); font-weight: 600;">View All →</a>
+                        </div>
+                        
+                        <div style="overflow-x: auto;">
+                            <table class="orders-table">
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Date</th>
+                                        <th>Items</th>
+                                        <th>Total</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="order-id">#KM-78542</span></td>
+                                        <td>Dec 20, 2024</td>
+                                        <td>3 items</td>
+                                        <td>$89.97</td>
+                                        <td><span class="order-status status-shipped">Shipped</span></td>
+                                        <td><a href="#" class="btn btn-sm btn-secondary">Track</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="order-id">#KM-78498</span></td>
+                                        <td>Dec 15, 2024</td>
+                                        <td>2 items</td>
+                                        <td>$54.98</td>
+                                        <td><span class="order-status status-delivered">Delivered</span></td>
+                                        <td><a href="#" class="btn btn-sm btn-secondary">Review</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="order-id">#KM-78456</span></td>
+                                        <td>Dec 10, 2024</td>
+                                        <td>5 items</td>
+                                        <td>$142.95</td>
+                                        <td><span class="order-status status-delivered">Delivered</span></td>
+                                        <td><a href="#" class="btn btn-sm btn-secondary">Reorder</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="order-id">#KM-78401</span></td>
+                                        <td>Dec 5, 2024</td>
+                                        <td>1 item</td>
+                                        <td>$34.99</td>
+                                        <td><span class="order-status status-processing">Processing</span></td>
+                                        <td><a href="#" class="btn btn-sm btn-secondary">Details</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Saved Addresses -->
+                    <div style="margin-top: 40px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                            <h3 style="font-family: 'Fredoka One', cursive; font-size: 1.3rem;">Saved Addresses</h3>
+                            <button class="btn btn-sm btn-primary"><i class="fas fa-plus"></i> Add New</button>
+                        </div>
+
+                        <div class="address-cards">
+                            <div class="address-card default">
+                                <span class="address-badge">Default</span>
+                                <h4>🏠 Home</h4>
+                                <p>
+                                    Sarah Johnson<br>
+                                    123 Rainbow Street, Apt 4B<br>
+                                    New York, NY 10001<br>
+                                    United States<br>
+                                    📞 (555) 123-4567
+                                </p>
+                                <div class="address-actions">
+                                    <button class="btn btn-sm btn-secondary">Edit</button>
+                                    <button class="btn btn-sm btn-secondary" style="color: var(--primary-red);">Delete</button>
+                                </div>
+                            </div>
+
+                            <div class="address-card">
+                                <h4>🏢 Office</h4>
+                                <p>
+                                    Sarah Johnson<br>
+                                    456 Business Ave, Suite 100<br>
+                                    New York, NY 10002<br>
+                                    United States<br>
+                                    📞 (555) 987-6543
+                                </p>
+                                <div class="address-actions">
+                                    <button class="btn btn-sm btn-secondary">Edit</button>
+                                    <button class="btn btn-sm btn-secondary">Set Default</button>
+                                </div>
+                            </div>
+
+                            <div class="add-address-card">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>Add New Address</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Account Settings Preview -->
+                    <div style="margin-top: 40px;">
+                        <h3 style="font-family: 'Fredoka One', cursive; font-size: 1.3rem; margin-bottom: 20px;">Quick Settings</h3>
+                        
+                        <div style="background: var(--light-gray); padding: 25px; border-radius: 15px;">
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                                <div>
+                                    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                                        <input type="checkbox" checked style="width: 20px; height: 20px; accent-color: var(--primary-pink);">
+                                        <span>Email me about new products</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                                        <input type="checkbox" checked style="width: 20px; height: 20px; accent-color: var(--primary-pink);">
+                                        <span>Notify me about sales & discounts</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                                        <input type="checkbox" style="width: 20px; height: 20px; accent-color: var(--primary-pink);">
+                                        <span>SMS order updates</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                                        <input type="checkbox" checked style="width: 20px; height: 20px; accent-color: var(--primary-pink);">
+                                        <span>Birthday rewards for my kids</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" style="margin-top: 20px;">
+                                <i class="fas fa-save"></i> Save Preferences
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-about">
+                        <div class="footer-logo">
+                            <span class="logo-emoji">🎒</span>
+                            <span class="logo-text">KiddyMart</span>
+                        </div>
+                        <p>Your one-stop shop for all kids' essentials!</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4 class="footer-title">Help</h4>
+                        <ul>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4 class="footer-title">Contact</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                <a href="mailto:hello@kiddymart.com">hello@kiddymart.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="copyright">© 2024 KiddyMart. Made with 💖</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

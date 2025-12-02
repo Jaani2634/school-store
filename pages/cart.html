@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - KiddyMart 🛒</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito:wght@400;600;700;800&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-left">
+                    <span class="marquee-text">🎉 Free Shipping on Orders Over $50!</span>
+                </div>
+                <div class="top-right">
+                    <a href="account.html"><i class="fas fa-user"></i> My Account</a>
+                    <a href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="../index.html">
+                        <div class="logo-icon"><span class="logo-emoji">🎒</span></div>
+                        <div class="logo-text">
+                            <span class="logo-main">KiddyMart</span>
+                            <span class="logo-tagline">Fun Shopping!</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="header-actions">
+                    <a href="wishlist.html" class="action-item">
+                        <div class="action-icon"><i class="fas fa-heart"></i><span class="badge">3</span></div>
+                    </a>
+                    <a href="cart.html" class="action-item cart-action">
+                        <div class="action-icon"><i class="fas fa-shopping-cart"></i><span class="badge">5</span></div>
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">🛒 Shopping Cart</h1>
+                <nav class="breadcrumb">
+                    <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+                    <span>/</span>
+                    <span class="current">Cart</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-layout" data-aos="fade-up">
+                <!-- Cart Table -->
+                <div class="cart-table-wrapper">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Cart Item 1 -->
+                            <tr>
+                                <td>
+                                    <div class="cart-product">
+                                        <div class="cart-product-image">
+                                            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=150" alt="Unicorn Backpack">
+                                        </div>
+                                        <div class="cart-product-info">
+                                            <h4><a href="product-detail.html">Magical Unicorn Backpack</a></h4>
+                                            <span class="variant">Color: Pink | Size: Medium</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="cart-price">$34.99</span></td>
+                                <td>
+                                    <div class="cart-quantity">
+                                        <button>-</button>
+                                        <input type="number" value="1" min="1">
+                                        <button>+</button>
+                                    </div>
+                                </td>
+                                <td><span class="cart-subtotal">$34.99</span></td>
+                                <td>
+                                    <button class="cart-remove" title="Remove Item">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Cart Item 2 -->
+                            <tr>
+                                <td>
+                                    <div class="cart-product">
+                                        <div class="cart-product-image">
+                                            <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=150" alt="Teddy Bear">
+                                        </div>
+                                        <div class="cart-product-info">
+                                            <h4><a href="product-detail.html">Cuddly Teddy Bear XL</a></h4>
+                                            <span class="variant">Color: Brown</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="cart-price">$24.99</span></td>
+                                <td>
+                                    <div class="cart-quantity">
+                                        <button>-</button>
+                                        <input type="number" value="2" min="1">
+                                        <button>+</button>
+                                    </div>
+                                </td>
+                                <td><span class="cart-subtotal">$49.98</span></td>
+                                <td>
+                                    <button class="cart-remove" title="Remove Item">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Cart Item 3 -->
+                            <tr>
+                                <td>
+                                    <div class="cart-product">
+                                        <div class="cart-product-image">
+                                            <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=150" alt="Colored Pencils">
+                                        </div>
+                                        <div class="cart-product-info">
+                                            <h4><a href="product-detail.html">Rainbow Colored Pencils Set</a></h4>
+                                            <span class="variant">48 Colors</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="cart-price">$12.99</span></td>
+                                <td>
+                                    <div class="cart-quantity">
+                                        <button>-</button>
+                                        <input type="number" value="1" min="1">
+                                        <button>+</button>
+                                    </div>
+                                </td>
+                                <td><span class="cart-subtotal">$12.99</span></td>
+                                <td>
+                                    <button class="cart-remove" title="Remove Item">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Cart Item 4 -->
+                            <tr>
+                                <td>
+                                    <div class="cart-product">
+                                        <div class="cart-product-image">
+                                            <img src="https://images.unsplash.com/photo-1524578271613-d550eacf6090?w=150" alt="Story Book">
+                                        </div>
+                                        <div class="cart-product-info">
+                                            <h4><a href="product-detail.html">Magical Adventures Story Book</a></h4>
+                                            <span class="variant">Hardcover Edition</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="cart-price">$18.99</span></td>
+                                <td>
+                                    <div class="cart-quantity">
+                                        <button>-</button>
+                                        <input type="number" value="1" min="1">
+                                        <button>+</button>
+                                    </div>
+                                </td>
+                                <td><span class="cart-subtotal">$18.99</span></td>
+                                <td>
+                                    <button class="cart-remove" title="Remove Item">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="cart-actions">
+                        <form class="coupon-form">
+                            <input type="text" placeholder="Enter coupon code">
+                            <button type="submit" class="btn btn-secondary">Apply Coupon</button>
+                        </form>
+                        <div>
+                            <a href="shop.html" class="btn btn-secondary">
+                                <i class="fas fa-arrow-left"></i> Continue Shopping
+                            </a>
+                            <button class="btn btn-primary">
+                                <i class="fas fa-sync-alt"></i> Update Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary">
+                    <h3>🧾 Order Summary</h3>
+                    
+                    <div class="summary-row">
+                        <span>Subtotal (5 items)</span>
+                        <span>$116.95</span>
+                    </div>
+                    
+                    <div class="summary-row discount">
+                        <span>Coupon Discount</span>
+                        <span>-$11.70</span>
+                    </div>
+
+                    <div class="shipping-options">
+                        <p style="font-weight: 600; margin-bottom: 10px;">Shipping:</p>
+                        <label>
+                            <input type="radio" name="shipping" value="free" checked>
+                            Free Shipping (5-7 days)
+                        </label>
+                        <label>
+                            <input type="radio" name="shipping" value="express">
+                            Express ($9.99) - 2-3 days
+                        </label>
+                        <label>
+                            <input type="radio" name="shipping" value="next">
+                            Next Day ($19.99)
+                        </label>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Estimated Tax</span>
+                        <span>$8.42</span>
+                    </div>
+
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span>$113.67</span>
+                    </div>
+
+                    <a href="checkout.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-lock"></i> Proceed to Checkout
+                    </a>
+                    
+                    <a href="#" class="btn btn-secondary" style="background: #FFD93D; border-color: #FFD93D; color: #2D3436;">
+                        <i class="fab fa-paypal"></i> PayPal Checkout
+                    </a>
+
+                    <div class="secure-checkout">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure 256-bit SSL Encryption</span>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div style="display: flex; justify-content: center; gap: 15px; margin-top: 20px; padding-top: 20px; border-top: 1px dashed #ddd;">
+                        <img src="https://via.placeholder.com/50x30?text=Visa" alt="Visa" style="height: 25px;">
+                        <img src="https://via.placeholder.com/50x30?text=MC" alt="Mastercard" style="height: 25px;">
+                        <img src="https://via.placeholder.com/50x30?text=Amex" alt="Amex" style="height: 25px;">
+                        <img src="https://via.placeholder.com/50x30?text=PayPal" alt="PayPal" style="height: 25px;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommended Products -->
+            <div class="related-products-section" style="margin-top: 60px;" data-aos="fade-up">
+                <div class="section-header">
+                    <span class="section-badge">💡 You Might Also Like</span>
+                    <h2 class="section-title">Recommended For You</h2>
+                </div>
+
+                <div class="products-grid" style="grid-template-columns: repeat(4, 1fr);">
+                    <div class="product-card card-3d">
+                        <div class="product-wishlist">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-image">
+                            <a href="product-detail.html">
+                                <img src="https://images.unsplash.com/photo-1594897030264-ab7d87efc473?w=300" alt="Lunch Bag">
+                            </a>
+                            <div class="product-actions">
+                                <button class="action-btn add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-category">Lunch Bags</div>
+                            <h3 class="product-title"><a href="#">Unicorn Lunch Bag</a></h3>
+                            <div class="product-price">
+                                <span class="current-price">$19.99</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card card-3d">
+                        <div class="product-badges"><span class="badge badge-sale">-20%</span></div>
+                        <div class="product-wishlist">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-image">
+                            <a href="product-detail.html">
+                                <img src="https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=300" alt="Notebook">
+                            </a>
+                            <div class="product-actions">
+                                <button class="action-btn add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-category">Stationery</div>
+                            <h3 class="product-title"><a href="#">Cute Notebook Set</a></h3>
+                            <div class="product-price">
+                                <span class="current-price">$11.99</span>
+                                <span class="original-price">$14.99</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card card-3d">
+                        <div class="product-wishlist">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-image">
+                            <a href="product-detail.html">
+                                <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?w=300" alt="Art Set">
+                            </a>
+                            <div class="product-actions">
+                                <button class="action-btn add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-category">Art Supplies</div>
+                            <h3 class="product-title"><a href="#">Watercolor Paint Set</a></h3>
+                            <div class="product-price">
+                                <span class="current-price">$16.99</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card card-3d">
+                        <div class="product-badges"><span class="badge badge-hot">Hot</span></div>
+                        <div class="product-wishlist">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-image">
+                            <a href="product-detail.html">
+                                <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=300" alt="Building Blocks">
+                            </a>
+                            <div class="product-actions">
+                                <button class="action-btn add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-category">Toys</div>
+                            <h3 class="product-title"><a href="#">Building Blocks 200pc</a></h3>
+                            <div class="product-price">
+                                <span class="current-price">$29.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-about">
+                        <div class="footer-logo">
+                            <span class="logo-emoji">🎒</span>
+                            <span class="logo-text">KiddyMart</span>
+                        </div>
+                        <p>Your one-stop shop for all kids' essentials!</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4 class="footer-title">Customer Service</h4>
+                        <ul>
+                            <li><a href="account.html">My Account</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Returns</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4 class="footer-title">Contact Us</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="contact-text">
+                                <a href="tel:+18001234567">1-800-KIDDY</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                <a href="mailto:hello@kiddymart.com">hello@kiddymart.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="copyright">© 2024 KiddyMart. Made with 💖 for Kids!</p>
+                    <div class="payment-methods">
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

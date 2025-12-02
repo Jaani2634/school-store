@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎒 KiddyMart - Fun Shopping for Kids!</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito:wght@400;600;700;800&family=Fredoka+One&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="bouncing-balls">
+                <div class="ball ball-1"></div>
+                <div class="ball ball-2"></div>
+                <div class="ball ball-3"></div>
+                <div class="ball ball-4"></div>
+            </div>
+            <p class="loading-text">Loading Fun Stuff...</p>
+        </div>
+    </div>
+
+    <!-- Floating Decorations -->
+    <div class="floating-decorations">
+        <div class="floating-item star" style="top: 10%; left: 5%;">⭐</div>
+        <div class="floating-item heart" style="top: 20%; right: 10%;">💖</div>
+        <div class="floating-item balloon" style="top: 60%; left: 3%;">🎈</div>
+        <div class="floating-item candy" style="top: 80%; right: 5%;">🍭</div>
+        <div class="floating-item rainbow" style="top: 40%; right: 2%;">🌈</div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-left">
+                    <span class="marquee-text">
+                        🎉 Free Shipping on Orders Over $50! | 🎁 Special Back-to-School Sale - 30% OFF! | 📚 New Arrivals Every Week!
+                    </span>
+                </div>
+                <div class="top-right">
+                    <a href="pages/account.html"><i class="fas fa-user"></i> My Account</a>
+                    <a href="pages/wishlist.html"><i class="fas fa-heart"></i> Wishlist</a>
+                    <a href="#"><i class="fas fa-globe"></i> EN</a>
+                    <a href="#"><i class="fas fa-dollar-sign"></i> USD</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon">
+                            <span class="logo-emoji">🎒</span>
+                            <div class="logo-sparkle"></div>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">KiddyMart</span>
+                            <span class="logo-tagline">Fun Shopping!</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <div class="search-wrapper">
+                        <select class="category-select">
+                            <option value="">All Categories</option>
+                            <option value="bags">School Bags</option>
+                            <option value="stationery">Stationery</option>
+                            <option value="toys">Toys</option>
+                            <option value="uniforms">Uniforms</option>
+                            <option value="shoes">Shoes</option>
+                            <option value="books">Books</option>
+                        </select>
+                        <input type="text" placeholder="Search for toys, bags, books...🔍">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <a href="tel:+1234567890" class="action-item phone-action">
+                        <div class="action-icon wiggle">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="action-text">
+                            <span class="action-label">Call Us</span>
+                            <span class="action-value">1-800-KIDDY</span>
+                        </div>
+                    </a>
+
+                    <a href="pages/wishlist.html" class="action-item wishlist-action">
+                        <div class="action-icon pulse">
+                            <i class="fas fa-heart"></i>
+                            <span class="badge">3</span>
+                        </div>
+                        <div class="action-text">
+                            <span class="action-label">Wishlist</span>
+                        </div>
+                    </a>
+
+                    <a href="pages/cart.html" class="action-item cart-action">
+                        <div class="action-icon bounce">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge">5</span>
+                        </div>
+                        <div class="action-text">
+                            <span class="action-label">Cart</span>
+                            <span class="action-value">$125.00</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li class="nav-item active">
+                        <a href="index.html">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item has-mega-menu">
+                        <a href="pages/shop.html">
+                            <i class="fas fa-store"></i> Shop
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-container">
+                                <div class="mega-column">
+                                    <h4>🎒 School Bags</h4>
+                                    <ul>
+                                        <li><a href="pages/shop.html?cat=backpacks">Backpacks</a></li>
+                                        <li><a href="pages/shop.html?cat=lunch-bags">Lunch Bags</a></li>
+                                        <li><a href="pages/shop.html?cat=trolley-bags">Trolley Bags</a></li>
+                                        <li><a href="pages/shop.html?cat=messenger-bags">Messenger Bags</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-column">
+                                    <h4>✏️ Stationery</h4>
+                                    <ul>
+                                        <li><a href="pages/shop.html?cat=pencils">Pencils & Pens</a></li>
+                                        <li><a href="pages/shop.html?cat=notebooks">Notebooks</a></li>
+                                        <li><a href="pages/shop.html?cat=art-supplies">Art Supplies</a></li>
+                                        <li><a href="pages/shop.html?cat=erasers">Erasers & Sharpeners</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-column">
+                                    <h4>🧸 Toys</h4>
+                                    <ul>
+                                        <li><a href="pages/shop.html?cat=educational">Educational Toys</a></li>
+                                        <li><a href="pages/shop.html?cat=plush">Plush Toys</a></li>
+                                        <li><a href="pages/shop.html?cat=action-figures">Action Figures</a></li>
+                                        <li><a href="pages/shop.html?cat=puzzles">Puzzles & Games</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-column">
+                                    <h4>👕 Clothing</h4>
+                                    <ul>
+                                        <li><a href="pages/shop.html?cat=uniforms">School Uniforms</a></li>
+                                        <li><a href="pages/shop.html?cat=shoes">Shoes</a></li>
+                                        <li><a href="pages/shop.html?cat=accessories">Accessories</a></li>
+                                        <li><a href="pages/shop.html?cat=sportswear">Sportswear</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-column mega-featured">
+                                    <div class="mega-banner">
+                                        <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=300" alt="Sale">
+                                        <div class="mega-banner-content">
+                                            <span class="mega-badge">HOT</span>
+                                            <h5>Back to School</h5>
+                                            <p>Up to 50% OFF</p>
+                                            <a href="pages/shop.html" class="mega-btn">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">
+                            <i class="fas fa-th-large"></i> Categories
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/shop.html?cat=bags">🎒 School Bags</a></li>
+                            <li><a href="pages/shop.html?cat=stationery">✏️ Stationery</a></li>
+                            <li><a href="pages/shop.html?cat=toys">🧸 Toys</a></li>
+                            <li><a href="pages/shop.html?cat=books">📚 Books</a></li>
+                            <li><a href="pages/shop.html?cat=uniforms">👕 Uniforms</a></li>
+                            <li><a href="pages/shop.html?cat=shoes">👟 Shoes</a></li>
+                            <li><a href="pages/shop.html?cat=art">🎨 Art Supplies</a></li>
+                            <li><a href="pages/shop.html?cat=sports">⚽ Sports</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/about.html">
+                            <i class="fas fa-info-circle"></i> About Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/blog.html">
+                            <i class="fas fa-blog"></i> Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/contact.html">
+                            <i class="fas fa-envelope"></i> Contact
+                        </a>
+                    </li>
+                    <li class="nav-item special">
+                        <a href="pages/shop.html?sale=true">
+                            <i class="fas fa-fire"></i> Sale
+                            <span class="nav-badge">HOT</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <span>🎒</span> KiddyMart
+            </div>
+            <button class="mobile-nav-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="mobile-nav-content">
+            <div class="mobile-search">
+                <input type="text" placeholder="Search products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <ul class="mobile-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="has-submenu">
+                    <a href="#"><i class="fas fa-store"></i> Shop <i class="fas fa-plus"></i></a>
+                    <ul class="submenu">
+                        <li><a href="pages/shop.html?cat=bags">School Bags</a></li>
+                        <li><a href="pages/shop.html?cat=stationery">Stationery</a></li>
+                        <li><a href="pages/shop.html?cat=toys">Toys</a></li>
+                        <li><a href="pages/shop.html?cat=uniforms">Uniforms</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="pages/blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="pages/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="mobile-nav-footer">
+                <a href="pages/account.html" class="mobile-account-btn">
+                    <i class="fas fa-user"></i> My Account
+                </a>
+                <div class="mobile-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-nav-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-slider swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide hero-slide" style="background: linear-gradient(135deg, #FF6B9D 0%, #FFB347 100%);">
+                    <div class="hero-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                        <div class="shape shape-4"></div>
+                    </div>
+                    <div class="container">
+                        <div class="hero-content">
+                            <div class="hero-text" data-aos="fade-right">
+                                <span class="hero-badge animate__animated animate__bounceIn">🎉 New Collection</span>
+                                <h1 class="hero-title animate__animated animate__fadeInUp">
+                                    Back to School<br>
+                                    <span class="highlight">Super Sale!</span>
+                                </h1>
+                                <p class="hero-description animate__animated animate__fadeInUp animate__delay-1s">
+                                    Discover amazing deals on school bags, stationery, and more! Make learning fun with our colorful collection.
+                                </p>
+                                <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-2s">
+                                    <a href="pages/shop.html" class="btn btn-primary btn-lg">
+                                        <span>Shop Now</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                    <a href="pages/shop.html?sale=true" class="btn btn-secondary btn-lg">
+                                        <span>View Offers</span>
+                                        <i class="fas fa-percentage"></i>
+                                    </a>
+                                </div>
+                                <div class="hero-features animate__animated animate__fadeInUp animate__delay-3s">
+                                    <div class="hero-feature">
+                                        <i class="fas fa-truck"></i>
+                                        <span>Free Shipping</span>
+                                    </div>
+                                    <div class="hero-feature">
+                                        <i class="fas fa-undo"></i>
+                                        <span>Easy Returns</span>
+                                    </div>
+                                    <div class="hero-feature">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Secure Payment</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hero-image" data-aos="fade-left">
+                                <div class="hero-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1503919545889-aef636e10ad4?w=600" alt="Happy Kids">
+                                    <div class="hero-floating-card card-1">
+                                        <span class="emoji">🎒</span>
+                                        <span class="text">50% OFF</span>
+                                    </div>
+                                    <div class="hero-floating-card card-2">
+                                        <span class="emoji">✨</span>
+                                        <span class="text">New!</span>
+                                    </div>
+                                    <div class="hero-floating-card card-3">
+                                        <span class="emoji">🎁</span>
+                                        <span class="text">Free Gift</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide hero-slide" style="background: linear-gradient(135deg, #84FAB0 0%, #8FD3F4 100%);">
+                    <div class="hero-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                    </div>
+                    <div class="container">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <span class="hero-badge">🧸 Toy Paradise</span>
+                                <h1 class="hero-title">
+                                    Amazing Toys<br>
+                                    <span class="highlight">For Little Stars!</span>
+                                </h1>
+                                <p class="hero-description">
+                                    Educational toys, plush friends, and endless fun! Discover toys that spark imagination and creativity.
+                                </p>
+                                <div class="hero-buttons">
+                                    <a href="pages/shop.html?cat=toys" class="btn btn-primary btn-lg">
+                                        <span>Explore Toys</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="hero-image">
+                                <div class="hero-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=600" alt="Kids Toys">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide hero-slide" style="background: linear-gradient(135deg, #A18CD1 0%, #FBC2EB 100%);">
+                    <div class="hero-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                    </div>
+                    <div class="container">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <span class="hero-badge">✏️ Creative Corner</span>
+                                <h1 class="hero-title">
+                                    Stationery &<br>
+                                    <span class="highlight">Art Supplies!</span>
+                                </h1>
+                                <p class="hero-description">
+                                    Colorful pencils, creative notebooks, and artistic supplies to bring your imagination to life!
+                                </p>
+                                <div class="hero-buttons">
+                                    <a href="pages/shop.html?cat=stationery" class="btn btn-primary btn-lg">
+                                        <span>Shop Stationery</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="hero-image">
+                                <div class="hero-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=600" alt="Stationery">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Free Shipping</h4>
+                        <p>On orders over $50</p>
+                    </div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        <i class="fas fa-undo-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Easy Returns</h4>
+                        <p>30-day return policy</p>
+                    </div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>24/7 Support</h4>
+                        <p>Friendly customer service</p>
+                    </div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Secure Payment</h4>
+                        <p>100% secure checkout</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">🌈 Explore</span>
+                <h2 class="section-title">Shop by Category</h2>
+                <p class="section-subtitle">Find everything your little ones need!</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card card-3d" data-aos="zoom-in" data-aos-delay="100">
+                    <a href="pages/shop.html?cat=bags">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300" alt="School Bags">
+                            <div class="category-overlay"></div>
+                        </div>
+                        <div class="category-content">
+                            <span class="category-emoji">🎒</span>
+                            <h3>School Bags</h3>
+                            <span class="category-count">120+ Products</span>
+                        </div>
+                        <div class="category-hover-effect"></div>
+                    </a>
+                </div>
+
+                <div class="category-card card-3d" data-aos="zoom-in" data-aos-delay="200">
+                    <a href="pages/shop.html?cat=stationery">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=300" alt="Stationery">
+                            <div class="category-overlay"></div>
+                        </div>
+                        <div class="category-content">
+                            <span class="category-emoji">✏️</span>
+                            <h3>Stationery</h3>
+                            <span class="category-count">250+ Products</span>
+                        </div>
+                        <div class="category-hover-effect"></div>
+                    </a>
+                </div>
+
+                <div class="category-card card-3d" data-aos="zoom-in" data-aos-delay="300">
+                    <a href="pages/shop.html?cat=toys">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=300" alt="Toys">
+                            <div class="category-overlay"></div>
+                        </div>
+                        <div class="category-content">
+                            <span class="category-emoji">🧸</span>
+                            <h3>Toys</h3>
+                            <span class="category-count">180+ Products</span>
+                        </div>
+                        <div class="category-hover-effect"></div>
+                    </a>
+                </div>
+
+                <div class="category-card card-3d" data-aos="zoom-in" data-aos-delay="400">
+                    <a href="pages/shop.html?cat=books">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1524578271613-d550eacf6090?w=300" alt="Books">
+                            <div class="category-overlay"></div>
+                        </div>
+                        <div class="category-content">
+                            <span class="category-emoji">📚</span>
+                            <h3>Books</h3>
+                            <span class="category-count">300+ Products</span>
+                        </div>
+                        <div class="category-hover-effect"></div>
+                    </a>
+                </div>
+
+                <div class="category-card card-3d" data-aos="zoom-in" data-aos-delay="500">
+                    <a href="pages/shop.html?cat=uniforms">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1503919889470-a09f58755c79?w=300" alt="Uniforms">
+                            <div class="category-overlay"></div>
+                        </div>
+                        <div class="category-content">
+                            <span class="category-emoji">👕</span>
+                            <h3>Uniforms</h3>
+                            <span class="category-count">85+ Products</span>
+                        </div>
+                        <div class="category-hover-effect"></div>
+                    </a>
+                </div>
+
+                <div class="category-card card-3d" data-aos="zoom-in" data-aos-delay="600">
+                    <a href="pages/shop.html?cat=shoes">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300" alt="Shoes">
+                            <div class="category-overlay"></div>
+                        </div>
+                        <div class="category-content">
+                            <span class="category-emoji">👟</span>
+                            <h3>Shoes</h3>
+                            <span class="category-count">95+ Products</span>
+                        </div>
+                        <div class="category-hover-effect"></div>
+                    </a>
+                </div>
+
+                <div class="category-card card-3d" data-aos="zoom-in" data-aos-delay="700">
+                    <a href="pages/shop.html?cat=art">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=300" alt="Art Supplies">
+                            <div class="category-overlay"></div>
+                        </div>
+                        <div class="category-content">
+                            <span class="category-emoji">🎨</span>
+                            <h3>Art Supplies</h3>
+                            <span class="category-count">150+ Products</span>
+                        </div>
+                        <div class="category-hover-effect"></div>
+                    </a>
+                </div>
+
+                <div class="category-card card-3d" data-aos="zoom-in" data-aos-delay="800">
+                    <a href="pages/shop.html?cat=sports">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=300" alt="Sports">
+                            <div class="category-overlay"></div>
+                        </div>
+                        <div class="category-content">
+                            <span class="category-emoji">⚽</span>
+                            <h3>Sports</h3>
+                            <span class="category-count">75+ Products</span>
+                        </div>
+                        <div class="category-hover-effect"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="promo-banners">
+        <div class="container">
+            <div class="banners-grid">
+                <div class="promo-banner banner-large" data-aos="fade-right">
+                    <div class="banner-bg" style="background: linear-gradient(135deg, #FF6B9D, #FF8E53);"></div>
+                    <div class="banner-content">
+                        <span class="banner-badge">Limited Time</span>
+                        <h3>Back to School</h3>
+                        <h2>Up to 50% OFF</h2>
+                        <p>On all school supplies!</p>
+                        <a href="pages/shop.html" class="btn btn-white">Shop Now</a>
+                    </div>
+                    <div class="banner-image">
+                        <img src="https://images.unsplash.com/photo-1503919889470-a09f58755c79?w=400" alt="Back to School">
+                    </div>
+                    <div class="banner-decorations">
+                        <span class="decoration star">⭐</span>
+                        <span class="decoration heart">💖</span>
+                    </div>
+                </div>
+
+                <div class="promo-banner banner-small" data-aos="fade-left" data-aos-delay="100">
+                    <div class="banner-bg" style="background: linear-gradient(135deg, #84FAB0, #8FD3F4);"></div>
+                    <div class="banner-content">
+                        <span class="banner-badge">New Arrival</span>
+                        <h3>Cute Toys</h3>
+                        <p>Starting at $9.99</p>
+                        <a href="pages/shop.html?cat=toys" class="btn btn-white btn-sm">Explore</a>
+                    </div>
+                    <span class="banner-emoji">🧸</span>
+                </div>
+
+                <div class="promo-banner banner-small" data-aos="fade-left" data-aos-delay="200">
+                    <div class="banner-bg" style="background: linear-gradient(135deg, #A18CD1, #FBC2EB);"></div>
+                    <div class="banner-content">
+                        <span class="banner-badge">Special</span>
+                        <h3>Free Gift</h3>
+                        <p>On orders $75+</p>
+                        <a href="pages/shop.html" class="btn btn-white btn-sm">Learn More</a>
+                    </div>
+                    <span class="banner-emoji">🎁</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products-section featured-products">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">⭐ Best Sellers</span>
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-subtitle">Most loved items by our little customers!</p>
+            </div>
+
+            <div class="products-tabs" data-aos="fade-up">
+                <button class="tab-btn active" data-tab="all">All</button>
+                <button class="tab-btn" data-tab="bags">Bags</button>
+                <button class="tab-btn" data-tab="stationery">Stationery</button>
+                <button class="tab-btn" data-tab="toys">Toys</button>
+                <button class="tab-btn" data-tab="books">Books</button>
+            </div>
+
+            <div class="products-grid" data-aos="fade-up">
+                <!-- Product 1 -->
+                <div class="product-card card-3d" data-category="bags">
+                    <div class="product-badges">
+                        <span class="badge badge-sale">-30%</span>
+                        <span class="badge badge-new">New</span>
+                    </div>
+                    <div class="product-wishlist">
+                        <button class="wishlist-btn" title="Add to Wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-image">
+                        <a href="pages/product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300" alt="Unicorn Backpack" class="img-primary">
+                            <img src="https://images.unsplash.com/photo-1581605405669-fcdf81165afa?w=300" alt="Unicorn Backpack" class="img-secondary">
+                        </a>
+                        <div class="product-actions">
+                            <button class="action-btn quick-view-btn" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="action-btn compare-btn" title="Compare">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">School Bags</div>
+                        <h3 class="product-title">
+                            <a href="pages/product-detail.html">Magical Unicorn Backpack</a>
+                        </h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(128)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$34.99</span>
+                            <span class="original-price">$49.99</span>
+                        </div>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #FF6B9D;" title="Pink"></span>
+                            <span class="color-dot" style="background: #84FAB0;" title="Mint"></span>
+                            <span class="color-dot" style="background: #A18CD1;" title="Purple"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card card-3d" data-category="toys">
+                    <div class="product-badges">
+                        <span class="badge badge-hot">Hot</span>
+                    </div>
+                    <div class="product-wishlist">
+                        <button class="wishlist-btn" title="Add to Wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-image">
+                        <a href="pages/product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=300" alt="Teddy Bear" class="img-primary">
+                            <img src="https://images.unsplash.com/photo-1559715541-5daf8a0296d0?w=300" alt="Teddy Bear" class="img-secondary">
+                        </a>
+                        <div class="product-actions">
+                            <button class="action-btn quick-view-btn" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="action-btn compare-btn" title="Compare">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">Toys</div>
+                        <h3 class="product-title">
+                            <a href="pages/product-detail.html">Cuddly Teddy Bear XL</a>
+                        </h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(256)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$24.99</span>
+                        </div>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #D4A574;" title="Brown"></span>
+                            <span class="color-dot" style="background: #F5F5DC;" title="Cream"></span>
+                            <span class="color-dot" style="background: #FFB6C1;" title="Pink"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card card-3d" data-category="stationery">
+                    <div class="product-badges">
+                        <span class="badge badge-sale">-20%</span>
+                    </div>
+                    <div class="product-wishlist">
+                        <button class="wishlist-btn active" title="Remove from Wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-image">
+                        <a href="pages/product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=300" alt="Colored Pencils" class="img-primary">
+                            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=300" alt="Colored Pencils" class="img-secondary">
+                        </a>
+                        <div class="product-actions">
+                            <button class="action-btn quick-view-btn" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="action-btn compare-btn" title="Compare">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">Stationery</div>
+                        <h3 class="product-title">
+                            <a href="pages/product-detail.html">Rainbow Colored Pencils Set</a>
+                        </h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">(89)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$12.99</span>
+                            <span class="original-price">$15.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card card-3d" data-category="books">
+                    <div class="product-badges">
+                        <span class="badge badge-new">New</span>
+                    </div>
+                    <div class="product-wishlist">
+                        <button class="wishlist-btn" title="Add to Wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-image">
+                        <a href="pages/product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1524578271613-d550eacf6090?w=300" alt="Story Book" class="img-primary">
+                            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300" alt="Story Book" class="img-secondary">
+                        </a>
+                        <div class="product-actions">
+                            <button class="action-btn quick-view-btn" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="action-btn compare-btn" title="Compare">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">Books</div>
+                        <h3 class="product-title">
+                            <a href="pages/product-detail.html">Magical Adventures Story Book</a>
+                        </h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(312)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$18.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card card-3d" data-category="bags">
+                    <div class="product-badges">
+                        <span class="badge badge-sale">-25%</span>
+                    </div>
+                    <div class="product-wishlist">
+                        <button class="wishlist-btn" title="Add to Wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-image">
+                        <a href="pages/product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1581605405669-fcdf81165afa?w=300" alt="Dinosaur Backpack" class="img-primary">
+                            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300" alt="Dinosaur Backpack" class="img-secondary">
+                        </a>
+                        <div class="product-actions">
+                            <button class="action-btn quick-view-btn" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="action-btn compare-btn" title="Compare">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">School Bags</div>
+                        <h3 class="product-title">
+                            <a href="pages/product-detail.html">Dino Explorer Backpack</a>
+                        </h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(95)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$29.99</span>
+                            <span class="original-price">$39.99</span>
+                        </div>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #4CAF50;" title="Green"></span>
+                            <span class="color-dot" style="background: #2196F3;" title="Blue"></span>
+                            <span class="color-dot" style="background: #FF5722;" title="Orange"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card card-3d" data-category="toys">
+                    <div class="product-badges">
+                        <span class="badge badge-hot">Trending</span>
+                    </div>
+                    <div class="product-wishlist">
+                        <button class="wishlist-btn" title="Add to Wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-image">
+                        <a href="pages/product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=300" alt="Building Blocks" class="img-primary">
+                            <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=300" alt="Building Blocks" class="img-secondary">
+                        </a>
+                        <div class="product-actions">
+                            <button class="action-btn quick-view-btn" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="action-btn compare-btn" title="Compare">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">Toys</div>
+                        <h3 class="product-title">
+                            <a href="pages/product-detail.html">Creative Building Blocks 500pc</a>
+                        </h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(445)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$45.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card card-3d" data-category="stationery">
+                    <div class="product-wishlist">
+                        <button class="wishlist-btn" title="Add to Wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-image">
+                        <a href="pages/product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=300" alt="Notebook Set" class="img-primary">
+                            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=300" alt="Notebook Set" class="img-secondary">
+                        </a>
+                        <div class="product-actions">
+                            <button class="action-btn quick-view-btn" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="action-btn compare-btn" title="Compare">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">Stationery</div>
+                        <h3 class="product-title">
+                            <a href="pages/product-detail.html">Cute Animal Notebook Set</a>
+                        </h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">(67)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$14.99</span>
+                        </div>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #FF6B9D;" title="Pink"></span>
+                            <span class="color-dot" style="background: #FFD700;" title="Yellow"></span>
+                            <span class="color-dot" style="background: #87CEEB;" title="Blue"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card card-3d" data-category="books">
+                    <div class="product-badges">
+                        <span class="badge badge-sale">-15%</span>
+                    </div>
+                    <div class="product-wishlist">
+                        <button class="wishlist-btn" title="Add to Wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-image">
+                        <a href="pages/product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300" alt="Activity Book" class="img-primary">
+                            <img src="https://images.unsplash.com/photo-1524578271613-d550eacf6090?w=300" alt="Activity Book" class="img-secondary">
+                        </a>
+                        <div class="product-actions">
+                            <button class="action-btn quick-view-btn" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" title="Add to Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="action-btn compare-btn" title="Compare">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">Books</div>
+                        <h3 class="product-title">
+                            <a href="pages/product-detail.html">Fun Learning Activity Book</a>
+                        </h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(178)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$11.99</span>
+                            <span class="original-price">$13.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-footer" data-aos="fade-up">
+                <a href="pages/shop.html" class="btn btn-primary btn-lg">
+                    <span>View All Products</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deal of the Day -->
+    <section class="deal-section">
+        <div class="container">
+            <div class="deal-wrapper" data-aos="zoom-in">
+                <div class="deal-bg">
+                    <div class="confetti"></div>
+                </div>
+                <div class="deal-content">
+                    <div class="deal-info">
+                        <span class="deal-badge">🔥 Deal of the Day</span>
+                        <h2 class="deal-title">Super School Starter Kit</h2>
+                        <p class="deal-description">
+                            Complete back-to-school package including backpack, pencil case, notebooks, and more! 
+                            Everything your child needs for a successful school year.
+                        </p>
+                        <div class="deal-price">
+                            <span class="current-price">$49.99</span>
+                            <span class="original-price">$89.99</span>
+                            <span class="discount-badge">Save 45%</span>
+                        </div>
+                        <div class="deal-countdown">
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="days">02</span>
+                                <span class="countdown-label">Days</span>
+                            </div>
+                            <div class="countdown-separator">:</div>
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="hours">15</span>
+                                <span class="countdown-label">Hours</span>
+                            </div>
+                            <div class="countdown-separator">:</div>
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="minutes">42</span>
+                                <span class="countdown-label">Mins</span>
+                            </div>
+                            <div class="countdown-separator">:</div>
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="seconds">30</span>
+                                <span class="countdown-label">Secs</span>
+                            </div>
+                        </div>
+                        <div class="deal-stock">
+                            <div class="stock-bar">
+                                <div class="stock-fill" style="width: 65%;"></div>
+                            </div>
+                            <span class="stock-text">Hurry! Only 35 left in stock</span>
+                        </div>
+                        <a href="pages/product-detail.html" class="btn btn-primary btn-lg pulse-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Grab This Deal</span>
+                        </a>
+                    </div>
+                    <div class="deal-image">
+                        <div class="deal-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1503919889470-a09f58755c79?w=500" alt="School Kit">
+                            <div class="deal-discount-circle">
+                                <span>45%</span>
+                                <span>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals Slider -->
+    <section class="new-arrivals-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">✨ Fresh & New</span>
+                <h2 class="section-title">New Arrivals</h2>
+                <p class="section-subtitle">Check out our latest additions!</p>
+            </div>
+
+            <div class="arrivals-slider swiper" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <!-- Slide items -->
+                    <div class="swiper-slide">
+                        <div class="product-card card-3d">
+                            <div class="product-badges">
+                                <span class="badge badge-new">Just In</span>
+                            </div>
+                            <div class="product-wishlist">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-image">
+                                <a href="pages/product-detail.html">
+                                    <img src="https://images.unsplash.com/photo-1596568635885-e93c9f8f8cc2?w=300" alt="Product">
+                                </a>
+                                <div class="product-actions">
+                                    <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                    <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Shoes</div>
+                                <h3 class="product-title"><a href="#">Rainbow Light-Up Sneakers</a></h3>
+                                <div class="product-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">$39.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-card card-3d">
+                            <div class="product-badges">
+                                <span class="badge badge-new">Just In</span>
+                            </div>
+                            <div class="product-wishlist">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-image">
+                                <a href="pages/product-detail.html">
+                                    <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?w=300" alt="Product">
+                                </a>
+                                <div class="product-actions">
+                                    <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                    <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Art Supplies</div>
+                                <h3 class="product-title"><a href="#">Deluxe Art Set 100pc</a></h3>
+                                <div class="product-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">$54.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-card card-3d">
+                            <div class="product-badges">
+                                <span class="badge badge-new">Just In</span>
+                            </div>
+                            <div class="product-wishlist">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-image">
+                                <a href="pages/product-detail.html">
+                                    <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?w=300" alt="Product">
+                                </a>
+                                <div class="product-actions">
+                                    <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                    <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Uniforms</div>
+                                <h3 class="product-title"><a href="#">Classic School Uniform Set</a></h3>
+                                <div class="product-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">$65.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-card card-3d">
+                            <div class="product-badges">
+                                <span class="badge badge-new">Just In</span>
+                            </div>
+                            <div class="product-wishlist">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-image">
+                                <a href="pages/product-detail.html">
+                                    <img src="https://images.unsplash.com/photo-1599423423927-27717799acf0?w=300" alt="Product">
+                                </a>
+                                <div class="product-actions">
+                                    <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                    <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Toys</div>
+                                <h3 class="product-title"><a href="#">Interactive Learning Robot</a></h3>
+                                <div class="product-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">$79.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-card card-3d">
+                            <div class="product-badges">
+                                <span class="badge badge-new">Just In</span>
+                            </div>
+                            <div class="product-wishlist">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-image">
+                                <a href="pages/product-detail.html">
+                                    <img src="https://images.unsplash.com/photo-1594897030264-ab7d87efc473?w=300" alt="Product">
+                                </a>
+                                <div class="product-actions">
+                                    <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                    <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Lunch Boxes</div>
+                                <h3 class="product-title"><a href="#">Cute Bento Lunch Box</a></h3>
+                                <div class="product-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">$22.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">💬 Reviews</span>
+                <h2 class="section-title">Happy Parents Say</h2>
+                <p class="section-subtitle">See why parents love shopping with us!</p>
+            </div>
+
+            <div class="testimonials-slider swiper" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "My daughter absolutely loves her new unicorn backpack! The quality is amazing and the colors are so vibrant. Will definitely shop here again!"
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" alt="Sarah M.">
+                                <div class="author-info">
+                                    <h4>Sarah M.</h4>
+                                    <span>Happy Mom</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Best online store for kids' supplies! Fast shipping, great prices, and my son was thrilled with his dinosaur lunch box. Highly recommend!"
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" alt="Michael R.">
+                                <div class="author-info">
+                                    <h4>Michael R.</h4>
+                                    <span>Proud Dad</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "The school starter kit was exactly what we needed! Everything is well-made and cute. My twins are ready for school thanks to KiddyMart!"
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100" alt="Emily T.">
+                                <div class="author-info">
+                                    <h4>Emily T.</h4>
+                                    <span>Super Mom</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Amazing customer service! Had an issue with my order and they resolved it immediately. The products are fantastic quality. Love this store!"
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100" alt="David L.">
+                                <div class="author-info">
+                                    <h4>David L.</h4>
+                                    <span>Happy Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">📝 Latest Articles</span>
+                <h2 class="section-title">From Our Blog</h2>
+                <p class="section-subtitle">Tips, ideas, and fun for parents and kids!</p>
+            </div>
+
+            <div class="blog-grid" data-aos="fade-up">
+                <article class="blog-card card-3d">
+                    <div class="blog-image">
+                        <a href="pages/blog.html">
+                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" alt="Blog Post">
+                        </a>
+                        <span class="blog-category">Back to School</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 
+
+                                  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
