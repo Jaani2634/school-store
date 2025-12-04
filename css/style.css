@@ -1,4 +1,4 @@
-* ============================================
+/* ============================================
    KIDDYMART - MAIN STYLESHEET
    A Fun & Colorful Kids Store Theme
    ============================================ */
@@ -44,7 +44,7 @@
     --shadow-heavy: rgba(0, 0, 0, 0.15);
     
     /* Typography */
-    --font-primary: 'Nunito', sans-seriF;
+    --font-primary: 'Nunito', sans-serif;
     --font-heading: 'Fredoka One', cursive;
     --font-fun: 'Bubblegum Sans', cursive;
     
@@ -7527,7 +7527,4 @@ input, select, textarea {
 
 .skip-link:focus {
     top: 10px;
-
 }
-
-
