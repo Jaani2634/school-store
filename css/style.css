@@ -1,3 +1,9 @@
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* ============================================
    KIDDYMART - MAIN STYLESHEET
    A Fun & Colorful Kids Store Theme
@@ -7527,4 +7533,5 @@ input, select, textarea {
 
 .skip-link:focus {
     top: 10px;
+
 }
